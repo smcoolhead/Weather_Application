@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="box">
+        <h1>City : <%= weatherReport.cityName %></h1>
+        <p class="heading">Temperature : <%= weatherReport.temp %> degree celcius</p>
+        <p>Weather Description : <%= weatherReport.description %></p>
+        <img src= "<%= weatherReport.imageURL %>" alt="Weather Related Image">
+        <p>Search for other City : </p>
+        <form action="/" method="get">
+            <button type="submit"> Go Back </button>
+        </form>
+    </div>
+</body>
+</html>
